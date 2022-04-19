@@ -1,3 +1,7 @@
+# User Custom Settings
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -79,8 +83,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions  
   zsh-z
+  zsh-autosuggestions  
+  zsh-syntax-highlighting
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="exa -l -h --git --icons"
 alias lla="ll -a"
+alias cat="bat"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
