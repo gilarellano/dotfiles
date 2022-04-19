@@ -1,0 +1,33 @@
+{
+	"messages": [
+		"Learn how to install a library for this header with vcpkg",
+		"Copy vcpkg command to install '{0}' to the clipboard",
+		"More Info",
+		"Ignore",
+		"The C/C++ extension installed does not match your system.",
+		"The C/C++ extension installed is compatible with but does not match your system.",
+		"client not found",
+		"Open a folder first to select a configuration",
+		"Open a folder first to select a configuration provider",
+		"Open a folder first to edit configurations",
+		"Open a folder first to edit configurations",
+		"Open a folder first to edit configurations",
+		"Open a folder first to add to {0}"
+	],
+	"keys": [
+		"learn.how.to.install.a.library",
+		"copy.vcpkg.command",
+		"more.info.button",
+		"ignore.button",
+		"vsix.platform.incompatible",
+		"vsix.platform.mismatching",
+		"client.not.found",
+		"configuration.select.first",
+		"configuration.provider.select.first",
+		"edit.configurations.open.first",
+		"edit.configurations.open.first",
+		"edit.configurations.open.first",
+		"add.includepath.open.first"
+	],
+	"filePath": "src\\LanguageServer\\extension"
+}

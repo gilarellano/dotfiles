@@ -1,0 +1,106 @@
+{
+	"name": "csv-to-table",
+	"icon": "images/icon.png",
+	"displayName": "CSV to Table",
+	"publisher": "phplasma",
+	"description": "Convert a CSV/TSV/PSV file to an ASCII formatted table",
+	"version": "1.4.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Plasma/csv-to-table.git"
+	},
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.csv-to-table.csv",
+		"onCommand:extension.csv-to-table.tsv",
+		"onCommand:extension.csv-to-table.psv",
+		"onCommand:extension.csv-to-table.ssv",
+		"onCommand:extension.csv-to-table.custom"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.csv-to-table.csv",
+				"title": "Convert to table from CSV (.csv / commas)"
+			},
+			{
+				"command": "extension.csv-to-table.tsv",
+				"title": "Convert to table from TSV (.tsv / tabs)"
+			},
+			{
+				"command": "extension.csv-to-table.psv",
+				"title": "Convert to table from PSV (.psv / pipes)"
+			},
+			{
+				"command": "extension.csv-to-table.ssv",
+				"title": "Convert to table from SSV (.ssv / semicolon)"
+			},
+			{
+				"command": "extension.csv-to-table.custom",
+				"title": "Convert to table from a custom defined separator"
+			}
+		],
+		"configuration": {
+			"title": "CSV to Table",
+			"properties": {
+				"csv-to-table.openGeneratedTableInNewEditor": {
+					"type": "boolean",
+					"default": true,
+					"description": "Open the generated table in a new editor window, instead of replacing the current editor's content."
+				},
+				"csv-to-table.upperCaseHeader": {
+					"type": "boolean",
+					"default": false,
+					"description": "Convert the first row's values (header) in the table to upper-case."
+				},
+				"csv-to-table.markdownFormat": {
+					"type": "boolean",
+					"default": false,
+					"description": "Write the generated table using Markdown format instead of the default style."
+				},
+				"csv-to-table.rightAlignNumbers": {
+					"type": "boolean",
+					"default": true,
+					"description": "Align cell values that are numbers to the right side for easy comparison between other row values."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^10.17.60",
+		"@types/vscode": "^1.39.0",
+		"glob": "^7.2.0",
+		"minimist": "^1.2.5",
+		"mkdirp": "^1.0.4",
+		"mocha": "^9.2.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.9.10",
+		"vscode-test": "^1.6.1"
+	},
+	"dependencies": {},
+	"__metadata": {
+		"id": "276fcd36-48fc-4505-bccb-24ec72a7f051",
+		"publisherId": "d55fbe2a-f85f-4747-8759-7c426b3258cc",
+		"publisherDisplayName": "Andrew Armstrong",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1650236733531
+	}
+}

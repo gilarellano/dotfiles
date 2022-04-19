@@ -1,0 +1,57 @@
+{
+	"name": "hscopes",
+	"displayName": "HyperScopes",
+	"description": " Supplies an API for querying TextMate scope information.",
+	"version": "0.0.6",
+	"publisher": "draivin",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"TextMate",
+		"scope",
+		"grammar"
+	],
+	"activationEvents": [
+		"onCommand:hscopes.never"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"compile": "tsc -p ./"
+	},
+	"dependencies": {
+		"vscode-oniguruma": "^1.5.1",
+		"vscode-textmate": "^5.4.0"
+	},
+	"devDependencies": {
+		"@types/mocha": "2.2.33",
+		"@types/node": "^15.3.0",
+		"@types/vscode": "^1.52.0",
+		"mocha": "^8.4.0",
+		"typescript": "^4.2.4"
+	},
+	"bugs": {
+		"url": "https://github.com/draivin/hscopes/issues"
+	},
+	"homepage": "https://github.com/draivin/hscopes/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/draivin/hscopes.git"
+	},
+	"__metadata": {
+		"id": "cbe19d3b-d390-40f9-92a5-561a1f132249",
+		"publisherId": "42f737c2-1d98-4d52-8380-1cbeaa676bde",
+		"publisherDisplayName": "draivin",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1650214743523
+	}
+}
